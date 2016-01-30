@@ -12,7 +12,7 @@ This CLI enable to create meeting request on the fly.
 
 Installation
 ------------
-
+ 
 To use with node:
 
 ```bash
