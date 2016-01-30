@@ -2,7 +2,7 @@
 
 ### What is this repository for? ###
 
-Installation
+Summary
 ------------
 This CLI enable to create meeting request on the fly.
 
@@ -12,7 +12,7 @@ This CLI enable to create meeting request on the fly.
 
 Installation
 ------------
- 
+
 To use with node:
 
 ```bash
