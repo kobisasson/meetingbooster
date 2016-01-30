@@ -1,6 +1,6 @@
 "use strict";
-var AbstractWriter = require('./../lib/utility/abstractWriter.js')
-
+var abstractWriter = require('./../lib/utility/abstractWriter.js')
+var C = require('./../lib/utility/contracts.js')
 var assert = require('assert');
 
 var fragments = {
@@ -13,19 +13,17 @@ var fragments = {
 describe('AbstractWriter test', function () {
 
     describe('Test basic APIs', function () {
-        var writer = AbstractWriter();
+        var writer = abstractWriter();
         beforeEach(function(){
             writer.initialize();
         })
         it('Flat tags test', function () {
-            //var writer = new AbstractWriter();
             writer.beginNode("{","}");
             writer.endNode();
             assert.equal(writer.serialize(), fragments["1"])
         });
 
         it('Add tag test', function () {
-            //var writer = new AbstractWriter();
             writer.beginNode("{","}");
                 writer.addLine('"key":"value"');
                 writer.addLine('"key":"value"');
@@ -34,7 +32,6 @@ describe('AbstractWriter test', function () {
         });
 
         it('Add nested tag test', function () {
-            //var writer = new AbstractWriter();
             writer.beginNode("{","}");
                 writer.beginNode("{","}");
                     writer.addLine('"key":"value"');
@@ -43,7 +40,6 @@ describe('AbstractWriter test', function () {
             assert.equal(writer.serialize(), fragments["3"])
         });
         it('Add nested tag test', function () {
-            //var writer = new AbstractWriter();
             writer.beginNode("{","}");
                 writer.beginNode("{","}");
                     writer.addLine('"key":"value"');
