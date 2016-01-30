@@ -4,13 +4,14 @@ This README would normally document whatever steps are necessary to get your app
 
 ### What is this repository for? ###
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+Installation
+------------
+This CLI enable to create meeting request on the fly.
+
 
 ### How do I get set up? ###
 
-* Summary of set up
+
 Installation
 ------------
 
@@ -65,12 +66,10 @@ template.subject.txt, e.g.:
 ```txt
 {{firstName}} - Perry , 1 on 1  Meeting
 ```
-
-
-* Dependencies
-* Database configuration
-* How to run tests
-
+once the folder is ready, run the below command in the specified folder:
+```bash
+$ meetingbooster
+```
 Running The Test Suite
 ----------------------
 
@@ -91,11 +90,3 @@ Alternately, if you've installed the dependencies, via:
 then you can run the tests (and get detailed output) by running:
 
     gulp test
-
-
-
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
