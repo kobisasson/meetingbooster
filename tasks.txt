@@ -1,0 +1,8 @@
+- handle partial json config file
+- docuement public methods
+- write md file
+- handle errors in abstractWritter
+- Implement build enviroment
+- run static code checks
+- upload to github
+- upload to npm

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{firstName}}</title>
+</head>
+<body style="font-family:Calibri,sans-serif;" >
+Hi {{firstName}} <br/>
+let's meet to discuss ... <br/>
+Thanks, <br/>
+Perry.
+</body>
+</html>

@@ -1,0 +1,5 @@
+#!/usr/bin/env node
+var calendar = require('./../lib/calendar');
+var cal = calendar()
+
+cal.run();

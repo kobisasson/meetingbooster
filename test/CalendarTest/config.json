@@ -1,0 +1,13 @@
+{
+  "start": "2016-02-01T09:00:00+02:00",
+  "end": "2016-02-01T09:30:00+02:00",
+  "location": "@Office",
+  "categories": "Green",
+  "reminder": "-PT15M",
+  "organizer": {
+    "name": "Perry",
+    "email": "dolor@dolorsitamet.ca"
+  },
+  "uid": "c1f4f1e6-dbc9-4c17-aa09-8a2ab9864da3",
+  "timestamp": "2016-02-01T09:00:00+02:00"
+}

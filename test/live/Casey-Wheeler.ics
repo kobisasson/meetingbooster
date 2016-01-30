@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//calendarEvent.js v0.0.1//EN
+BEGIN:VEVENT
+UID:f6b64c71-da83-44f7-853d-f0e88c6d3c67
+DTSTAMP;TZID=UTC +2:20160124T232256
+METHOD:REQUEST
+STATUS:CONFIRMED
+DTSTART;TZID=UTC +2:20160201T090000
+DTEND;TZID=UTC +2:20160201T093000
+SUMMARY:Casey - Perry , 1 on 1  Meeting
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Casey</title></head><body style="font-family:Calibri,sans-serif">Hi Casey<br>let's meet to discuss ...<br>Thanks,<br>Perry.</body></html>
+DESCRIPTION
+ORGANIZER;CN=Perry:MAILTO:dolor@dolorsitamet.ca
+LOCATION:@Office
+CATEGORIES:Green
+ATTENDEE;RSVP=TRUE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=Casey Wheeler:MAILTO:ac.facilisis@nonenim.edu
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+VERSION:2.0
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

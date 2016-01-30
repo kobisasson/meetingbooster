@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//calendarEvent.js v0.0.1//EN
+BEGIN:VEVENT
+UID:3469ba10-228e-40d7-9e60-6a82720992c4
+DTSTAMP;TZID=UTC +2:20160124T232256
+METHOD:REQUEST
+STATUS:CONFIRMED
+DTSTART;TZID=UTC +2:20160201T090000
+DTEND;TZID=UTC +2:20160201T093000
+SUMMARY:Illiana - Perry , 1 on 1  Meeting
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Illiana</title></head><body style="font-family:Calibri,sans-serif">Hi Illiana<br>let's meet to discuss ...<br>Thanks,<br>Perry.</body></html>
+DESCRIPTION
+ORGANIZER;CN=Perry:MAILTO:dolor@dolorsitamet.ca
+LOCATION:@Office
+CATEGORIES:Green
+ATTENDEE;RSVP=TRUE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=Illiana Gomez:MAILTO:quis.turpis@senectus.org
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+VERSION:2.0
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

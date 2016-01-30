@@ -1,0 +1,30 @@
+{
+  "uid": "498085f2-cd79-4b8d-9efe-7eda9ca62c9d",
+  "timezone": "UTC +2",
+  "offset": -120,
+  "method": "request",
+  "status": "confirmed",
+  "timestamp": "2016-02-01T09:00:00+02:00",
+  "start": "2016-02-01T09:00:00+02:00",
+  "end": "2016-02-01T09:30:00+02:00",
+  "summary": "1 on 1 meeting",
+  "html": "<!DOCTYPE html><html lang=\"en\"><head><meta charset=\"UTF-8\"><title></title></head><body style=\"font-family:Calibri,sans-serif\"></body></html>",
+  "description": "some text",
+  "location": "@Office",
+  "categories": "Green",
+  "reminder": "-PT15M",
+  "organizer": {
+    "name": "Perry",
+    "email": "dolor@dolorsitamet.ca"
+  },
+  "attendees": [
+    {
+      "name": "Fatima Tillman",
+      "email": "Integer.tincidunt@odiotristiquepharetra.com"
+    },
+    {
+      "name": "Ignacia Wilder",
+      "email": "et@faucibus.co.uk"
+    }
+  ]
+}
