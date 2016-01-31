@@ -1,13 +1,9 @@
 # README #
 
-### What is this repository for? ###
 
 Summary
 ------------
-This CLI enable to create meeting request on the fly.
-
-
-### How do I get set up? ###
+This CLI enable to create meeting requests on the fly.
 
 
 Installation
@@ -18,12 +14,12 @@ To use with node:
 ```bash
 $ npm install -g meetingbooster
 ```
-* Configuration
+
 
 Configuration
 ------------
 In order to excute meetingbooster, create a new folder with the following files:
-config.json, e.g.:
+**config.json**, e.g.:
 ```javascript
 {
   "start": "2016-02-01T09:00:00+02:00",
@@ -34,17 +30,15 @@ config.json, e.g.:
   "organizer": {
     "name": "Perry",
     "email": "dolor@dolorsitamet.ca"
-  },
-  "uid": "c1f4f1e6-dbc9-4c17-aa09-8a2ab9864da3",
-  "timestamp": "2016-02-01T09:00:00+02:00"
+  }
 }
 ```
-users.csv, e.g.:
+**users.csv**, e.g.: 
 ```csv
 id,firstName,lastName,email,comments
 1,Boris,Guzman,pellentesque.a.facilisis@vitaedolorDonec.org,None
 ```
-template.content.txt, e.g.( can also except html content):
+**template.content.txt**, e.g.( can accept also html content):
 ```txt
 <!DOCTYPE html>
 <html lang="en">
@@ -60,14 +54,18 @@ Perry.
 </body>
 </html>
 ```
-template.subject.txt, e.g.:
+Please note, you can use handlebar notation {{...}} , for: {{firstName}},{{lastName}},{{comments}},{{id}},{{email}}.
+**template.subject.txt**, e.g.:
 ```txt
 {{firstName}} - Perry , 1 on 1  Meeting
 ```
-once the folder is ready, run the below command in the specified folder:
+Please note, you can use handlebar notation {{...}} , for: {{firstName}},{{lastName}},{{comments}},{{id}},{{email}}.
+
+Once the folder is ready, run the below command in the specified folder:
 ```bash
 $ meetingbooster
 ```
+
 Running The Test Suite
 ----------------------
 

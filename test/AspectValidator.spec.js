@@ -27,5 +27,45 @@ describe('Aspect Validator  test', function () {
             assert.throws(()=> func("33"));
         });
 
+        it('aspect Builder test', function () {
+
+            const aspect = P.aspectBuilder();
+            const log = (x) => console.log("before:", x);
+            this.x = "yooo";
+            const func = aspect.before(function () {
+                this.start = new Date();
+                return R.slice(0, Infinity, arguments);
+            }).after(function (result) {
+                assert.equal(this.x, "yooo");
+            }).bind(this)
+                .validate(C.integer32, C.string)
+                .for((y) => y + '');
+
+            assert.deepEqual(func(3), "3");
+            assert.deepEqual(func(33), "33");
+            assert.throws(()=> func("33"));
+        });
+
+        it('aspect Builder test: Partial initialization', function () {
+            const aspect = P.aspectBuilder();
+            const func = aspect.bind(this)
+                .validate(C.integer32, C.string)
+                .for((y) => y + '');
+
+            assert.deepEqual(func(3), "3");
+            assert.deepEqual(func(33), "33");
+            assert.throws(()=> func("33"));
+        });
+
+        it('aspect Builder test: Partial initialization"no bind', function () {
+            const aspect = P.aspectBuilder();
+            const func = aspect.validate(C.integer32, C.string)
+                .for((y) => y + '');
+
+            assert.deepEqual(func(3), "3");
+            assert.deepEqual(func(33), "33");
+            assert.throws(()=> func("33"));
+        });
+
     });
 });
