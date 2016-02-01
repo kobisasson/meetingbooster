@@ -24,9 +24,7 @@ describe('CalendarEvent test', function () {
 
 
         })
-        afterEach(function () {
-            //writer.initialize();
-        })
+  
         it('Flat tags test', function () {
             var writer = new CalendarEvent(eventSettings);
             assert.equal(writer.serialize(), icsEvent);
