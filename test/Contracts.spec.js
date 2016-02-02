@@ -10,6 +10,7 @@ describe('Contracts lib test', function () {
 
         it('string contract test', function () {
             assert.equal(C.string('aaa'), 'aaa');
+
             assert.throws(() => C.string(3));
             assert.throws(() => C.string(null));
             assert.throws(() => C.string(undefined));
@@ -22,6 +23,7 @@ describe('Contracts lib test', function () {
 
         it('number contract test', function () {
             assert.equal(C.number(3), 3);
+
             assert.throws(() => C.number(''));
             assert.throws(() => C.number(null));
             assert.throws(() => C.number(undefined));
@@ -34,6 +36,7 @@ describe('Contracts lib test', function () {
 
         it('boolean contract test', function () {
             assert.equal(C.boolean(true), true);
+
             assert.throws(() => C.boolean(''));
             assert.throws(() => C.boolean(null));
             assert.throws(() => C.boolean(undefined));
@@ -47,6 +50,7 @@ describe('Contracts lib test', function () {
         it('function contract test', function () {
             const func = (x)=> x ;
             assert.equal(C.function(func), func);
+
             assert.throws(() => C.function(''));
             assert.throws(() => C.function(null));
             assert.throws(() => C.function(undefined));
@@ -114,7 +118,7 @@ describe('Contracts lib test', function () {
             assert.equal(C.booleanOrNil(null), null);
             assert.equal(C.booleanOrNil(undefined), undefined);
             assert.throws(() => C.booleanOrNil(''));
-             assert.throws(() => C.booleanOrNil(3));
+            assert.throws(() => C.booleanOrNil(3));
             assert.throws(() => C.booleanOrNil({}));
             assert.throws(() => C.booleanOrNil([]));
             assert.throws(() => C.booleanOrNil((x)=> x ));
@@ -219,7 +223,7 @@ describe('Contracts lib test', function () {
             assert.throws(() => C.integer32Positive((x) => x ));
         });
 
-        it('Negetive 32 integer contract test', function () {
+        it('Negative 32 integer contract test', function () {
             const obj = {} , arr = [];
             assert.equal(C.integer32Negative(-3), -3);
             assert.equal(C.integer32Negative(-Math.pow(2, 31))+1, -Math.pow(2, 31)+1);
